@@ -6,7 +6,7 @@ Task Management: Users can add, edit, remove, and sort tasks based on categories
 Reminder System: Tasks have reminders that notify users of upcoming deadlines or birthdays.
 Design Patterns:
 Strategy Pattern: Different sorting strategies (e.g., by category, by deadline) are implemented.
-Observer Pattern: Users receive notifications when a task's reminder is triggered.
+Observer Pattern: Users receive notifications when a task’s reminder is triggered.
 MVC Pattern: Separates the application into three components (Model, View, Controller) for better code organization and maintainability.
 Technologies Used
 Java: Main programming language.
@@ -47,26 +47,16 @@ Design Patterns Used
 The Strategy pattern is used for implementing different sorting strategies for tasks. For example, tasks can be sorted by category or by deadline, allowing users to select the most appropriate sorting method dynamically.
 
 2. Observer Pattern
-The Observer pattern notifies users when a task's reminder is triggered. When a task’s due time arrives, subscribed observers (such as a notification system) are informed to send alerts to the user.
+The Observer pattern notifies users when a task’s reminder is triggered. When a task’s due time arrives, the system sends alerts to users through the notification system.
 
 3. MVC Pattern
-The Model-View-Controller (MVC) pattern is employed to separate concerns in the application:
+The Model-View-Controller (MVC) pattern separates the application into three components:
 
 Model: Represents the application's data and business logic (e.g., tasks, reminders).
-View: Displays the tasks and reminders to the user.
+View: Displays the tasks and updates the view based on the controller’s instructions.
 Controller: Handles user interactions (e.g., adding/editing tasks) and updates both the model and the view.
-Files Overview
-Key Files:
-Main.java: The entry point of the application.
-Task.java: Represents individual tasks with associated reminders.
-Observer.java & Subject.java: Implements the observer pattern for notifying users about reminders.
-TaskController.java: Manages interactions between the user interface and the underlying data.
-TaskModel.java: Manages the data of tasks.
-TaskView.java: Displays the tasks and updates the view based on the controller’s instructions.
-Sorting Strategy Files: CategorySortingStrategy.java and DeadlineSortingStrategy.java implement different sorting strategies.
 Contributing
 If you would like to contribute, feel free to fork the repository and submit a pull request. We welcome suggestions for improvements, bug fixes, and new features.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
