@@ -35,13 +35,20 @@ Copy
 SE3317-Project/
 │
 ├── src/
-│   ├── model/               # Contains the business logic
-│   ├── view/                # Handles the user interface
-│   └── controller/          # Manages user input and interaction with the model
+
+│   ├── model/     
+# Contains the business logic
+│   ├── view/       
+# Handles the user interface
+│   └── controller/  
+# Manages user input and interaction with the model
 │
-├── Main.java                # Entry point for the application
-├── README.md                # This file
-└── .gitignore               # Git ignore file
+├── Main.java             
+# Entry point for the application
+├── README.md       
+# This file
+└── .gitignore          
+# Git ignore file
 Design Patterns Used
 1. Strategy Pattern
 The Strategy pattern is used for implementing different sorting strategies for tasks. For example, tasks can be sorted by category or by deadline, allowing users to select the most appropriate sorting method dynamically.
